@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M Bagus Prabowo Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      .x-tabs {
+        display: flex;
+        min-width: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        border-radius: var(--r-pill);
+        background: var(--fill-segment);
+      }
+      .x-tabs::-webkit-scrollbar { display: none; }
+      .x-tabs button {
+        flex: none;
+        padding: 8px 14px;
+        border: 0;
+        border-radius: var(--r-pill);
+        background: transparent;
+        font: var(--type-label);
+        color: var(--text-secondary-on);
+        white-space: nowrap;
+        cursor: pointer;
+      }
+      .x-tabs button:hover { color: var(--text-primary-on); }
+      .x-tabs button[aria-selected="true"] { background: var(--fill-primary-on); color: var(--text-primary); }
+      @media (max-width: 599px) {
+        .x-tabs button { display: flex; align-items: center; min-height: var(--tap); }
+      }
+      .x-view { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; min-width: 0; }
+      .x-view[hidden] { display: none; }
+      .x-view:focus { outline: none; }
+    </style>
+  </head>
+  <body>
+    <div class="page" id="top">
+      <header class="nav glass">
+        <div class="x-tabs" role="tablist" aria-label="Views">
+          <button type="button" role="tab" id="tab-vision" aria-controls="vision" aria-selected="true">Vision</button>
+          <button type="button" role="tab" id="tab-software" aria-controls="software" aria-selected="false" tabindex="-1">Software</button>
+          <button type="button" role="tab" id="tab-books" aria-controls="books" aria-selected="false" tabindex="-1">Books &amp; Reports</button>
+          <button type="button" role="tab" id="tab-laws" aria-controls="laws" aria-selected="false" tabindex="-1">Laws</button>
+          <button type="button" role="tab" id="tab-interactive" aria-controls="interactive" aria-selected="false" tabindex="-1">Interactive</button>
+          <button type="button" role="tab" id="tab-inner" aria-controls="inner" aria-selected="false" tabindex="-1">Inner life</button>
+          <button type="button" role="tab" id="tab-about" aria-controls="about" aria-selected="false" tabindex="-1">About</button>
+        </div>
+        <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch to dark theme"></button>
+      </header>
+      <main class="main">
+        <section class="x-view" id="vision" data-nav="Vision" role="tabpanel" aria-labelledby="tab-vision" tabindex="-1">
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">M. Bagus Prabowo · Semarang, Indonesia</p>
+              <h1>More output for humanity, shared well.</h1>
+              <p class="hero__sub">I'm M. Bagus Prabowo, 17, a high-school senior in Semarang, Indonesia. I'm obsessed with one question: if AI and robots can multiply what humanity produces, how do we make that output real, trustworthy, and widely shared, instead of fake, fragile, or owned by a few?</p>
+              <p class="hero__meta">17 · Grade 12, science stream, SMA Negeri 2 Ungaran · Writing full-stack AI apps since August 2026</p>
+            </div>
+          </section>
+
+          <section class="section" id="pillars">
+            <div class="head">
+              <p class="head__eyebrow">Three pillars</p>
+              <h2>Make more, make it real, share it widely.</h2>
+            </div>
+            <div class="cards">
+              <div>
+                <h3>1. Abundance</h3>
+                <p>AI and robots as engines of economic output.</p>
+                <p>My north star is the Kardashev scale. By Sagan's formula humanity today is about <strong>Type 0.73</strong>. A Type I civilization uses about <strong>1.74 × 10<sup>17</sup> watts</strong>: all the sunlight Earth receives.</p>
+              </div>
+              <div>
+                <h3>2. Trust</h3>
+                <p class="quote">Output only counts if it's real.</p>
+                <p>My software refuses to make things up: Groundwork's evidence gates, Novaro's fixed-formula finance, the HLE audit's controls.</p>
+              </div>
+              <div>
+                <h3>3. Distribution</h3>
+                <p class="quote">Who owns the machines decides who gains.</p>
+                <p>My After Labor report and robotics laws are about that question.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" id="next">
+            <div class="head"><h2>Where I'm curious</h2></div>
+            <div class="prose">
+              <p>I keep coming back to frontier AI and robotics as engines of economic growth, and to why institutions lag so far behind the technology they have to govern. I'm especially curious whether Africa, as the mineral base for AI, could become a place that builds robots, not just digs for them. I don't have answers yet. These are the questions I want to spend the next few years learning about.</p>
+            </div>
+            <div class="links">
+              <a class="btn" href="https://github.com/Muhammad7A" target="_blank" rel="noopener">See my GitHub</a>
+              <a class="btn" href="https://hark.com/site/181c767c-91b2-4253-a043-7bb306687c8c?hark_region=us" target="_blank" rel="noopener">Explore the Kardashev model</a>
+            </div>
+          </section>
+
+          <section class="stats">
+            <div class="stat"><span class="stat__fig">3</span><span class="stat__label">Public AI projects</span></div>
+            <div class="stat"><span class="stat__fig">273 + 535</span><span class="stat__label">Automated tests across two codebases</span></div>
+            <div class="stat"><span class="stat__fig">1,000</span><span class="stat__label">Questions in my AI benchmark audit</span></div>
+          </section>
+        </section>
+
+        <section class="x-view" id="software" data-nav="Software" role="tabpanel" aria-labelledby="tab-software" tabindex="-1" hidden>
+        <section class="hero">
+          <div class="hero__copy">
+            <p class="hero__eyebrow">Software · August to October 2026</p>
+            <h1>I build AI systems that have to show their evidence.</h1>
+            <p class="hero__sub">Three public projects: interview findings tied to verbatim quotes, an audit of an AI benchmark, and a finance app where AI never does the math.</p>
+          </div>
+          <aside class="callout" aria-label="Next step">
+            <p class="callout__head"><span class="hark-mark" data-size="16"></span> Start here</p>
+            <p class="callout__lead"><strong>The code is all public.</strong> Each project's README says what works and what doesn't yet.</p>
+            <a class="btn" href="https://github.com/Muhammad7A" target="_blank" rel="noopener">See my GitHub</a>
+          </aside>
+        </section>
+
+        <section class="section" id="groundwork">
+          <div class="head">
+            <p class="head__eyebrow">Project 1 · Groundwork · Python · Apache-2.0</p>
+            <h2>AI-conducted employee interviews where every finding resolves to a verbatim quote, or it doesn't ship.</h2>
+            <p class="head__sub">In AI-transformation consulting, the slow step is interviewing dozens of employees. An LLM summarizing those interviews produces fluent, partly invented findings. I wanted findings that can be checked.</p>
+          </div>
+          <div class="cards">
+            <div>
+              <h3>Two independent gates</h3>
+              <ul>
+                <li><strong>Gate 1, Grounding:</strong> the quoted span must exist verbatim in the immutable transcript, or the claim is rejected.</li>
+                <li><strong>Gate 2, Entailment:</strong> the quote must actually support the claim.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>A fuzzer that attacks the gates</h3>
+              <p>A property-based fuzzer tries to sneak claims past both gates and fails the build on any false accept.</p>
+              <p class="quote">It caught a real bug: "vendor I" matching inside "vendor ignores".</p>
+            </div>
+            <div>
+              <h3>Privacy firewall</h3>
+              <ul>
+                <li>HMAC pseudonymization at ingest</li>
+                <li>Encryption at rest</li>
+                <li>k-anonymity and aggregate-only release</li>
+              </ul>
+              <p>I found and fixed three real privacy leaks while building it.</p>
+            </div>
+            <div>
+              <h3>Truth taxonomy</h3>
+              <p>Findings are graded Tier 0 to 4, with calibration checks on stated confidence.</p>
+            </div>
+          </div>
+          <div class="aside">
+            <h3>Honest status</h3>
+            <p>The engine runs, with <span class="pill">273 passing tests</span> <span class="pill">0 third-party dependencies</span>, and the evaluation gate and fuzz audit run in CI on every push. It has never been run with real employees. The core thesis, that AI interviewers get more candid answers than human consultants, is untested; I have written an experiment design for it.</p>
+          </div>
+          <div class="prose">
+            <p>Run it: <code>python3 -m ai_engine.cli --simulated --candor open</code>. A guarded interviewee correctly produces zero findings.</p>
+          </div>
+          <div class="links">
+            <a class="btn" href="https://github.com/Muhammad7A/groundwork" target="_blank" rel="noopener">Groundwork on GitHub</a>
+          </div>
+        </section>
+
+        <section class="section" id="hle">
+          <div class="head">
+            <p class="head__eyebrow">Project 2 · "Tools, Not Leaks?" · Paper + code · MIT</p>
+            <h2>When an AI agent with web search scores high on Humanity's Last Exam, is it reasoning or finding leaked answers?</h2>
+            <p class="head__sub">A pilot audit on HLE-Diamond, 1,000 questions.</p>
+          </div>
+          <div class="pair">
+            <div class="prose">
+              <p><strong>The protocol I specified:</strong> two independent blind solving passes, blind adjudication, answers locked with SHA-256 hashes before any grading, and grading isolated from the solvers.</p>
+              <p><strong>I corrected my own claim.</strong> Version 1 read the web gap as leakage. Version 2 added controls, and they showed most of the gain is genuine tool use.</p>
+            </div>
+            <aside class="callout" aria-label="AI-use disclosure">
+              <p class="callout__head">AI-use disclosure</p>
+              <p class="callout__lead"><strong>AI agents did the solving, adjudication and judging.</strong> I designed the protocol and integrity rules, reviewed outputs, and wrote and edited the paper with AI assistance.</p>
+              <p class="fineprint">Pilot study, not peer reviewed.</p>
+            </aside>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <caption>Results</caption>
+              <thead>
+                <tr><th scope="col">Measure</th><th scope="col">Result</th><th scope="col">Note</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Judged accuracy <small>All 1,000 items</small></th><td class="num">74.4%</td><td class="muted">95% CI 71.7–77.1%</td></tr>
+                <tr><th scope="row">Strict literal floor</th><td class="num">54.5%</td><td class="muted">Exact answers only</td></tr>
+                <tr class="is-highlight"><th scope="row">No-tools control <small>200 items</small></th><td class="num">43.5% vs 74.0%</td><td class="muted">+30.5 points with tools, CI 23.5–38.0</td></tr>
+                <tr><th scope="row">Blocklist re-run <small>100 web-used knowledge items</small></th><td>No measurable contamination</td><td class="muted">At search time</td></tr>
+                <tr><th scope="row">Judge leniency</th><td class="num">≈ +20 points</td><td class="muted">The main open issue</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="links">
+            <a class="btn" href="https://github.com/Muhammad7A/HLE-Diamond-Hark-Evals" target="_blank" rel="noopener">Code on GitHub</a>
+            <a class="btn" href="https://github.com/Muhammad7A/HLE-Diamond-Hark-Evals/blob/main/paper/paper.pdf" target="_blank" rel="noopener">Read the paper (PDF)</a>
+          </div>
+        </section>
+
+        <section class="section" id="novaro">
+          <div class="head">
+            <p class="head__eyebrow">Project 3 · Novaro · Node.js</p>
+            <h2>A financial companion for Indonesian culinary sellers, where AI explains the numbers but never computes them.</h2>
+            <p class="head__sub">Built for micro and small business owners. Every financial number comes from the server's fixed formulas.</p>
+          </div>
+          <div class="cards">
+            <div>
+              <h3>What it does</h3>
+              <ul>
+                <li>Daily cash book in 10 seconds</li>
+                <li>0–100 financial health score from real records</li>
+                <li>KUR (government microloan) repayment simulator</li>
+                <li>Bank-ready loan report</li>
+                <li>Receipt scanning with AI</li>
+              </ul>
+            </div>
+            <div>
+              <h3>How it's built</h3>
+              <p>Node.js/Express, PostgreSQL or JSON storage, Gemini.</p>
+              <p><span class="pill">535 regression tests</span></p>
+            </div>
+            <div>
+              <h3>Where it came from</h3>
+              <p>My school research project for OPSI 2026, team "Nova Fund": a waitlist-control trial with about 20 participants.</p>
+              <p>Placed in the top 200 of Emergent's "Building Indonesia" contest (not top 100). Version 3 is an independent rebuild after exporting from Emergent.</p>
+            </div>
+          </div>
+          <div class="links">
+            <a class="btn" href="https://github.com/Muhammad7A/novaro-ai" target="_blank" rel="noopener">Novaro on GitHub</a>
+          </div>
+        </section>
+
+        <div class="aside">
+          <h3>Built on a shoestring</h3>
+          <p>These projects were built with one month of Claude Pro, one month of the Z.ai GLM Coding Lite plan, a $300 Google Cloud free-trial credit, and a one-month early-user Hark Pro³ trial. They're my earlier work, from August to October 2026.</p>
+        </div>
+        </section>
+
+        <section class="x-view" id="books" data-nav="Books" role="tabpanel" aria-labelledby="tab-books" tabindex="-1" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Books &amp; Reports · Made with Hark, my AI agent</p>
+              <h1>Books and reports on machines, money and power.</h1>
+              <p class="hero__sub">Since October 2026 I've used Hark, an AI agent, as a research and writing partner. I chose the questions, set the rules and edited; Hark did much of the drafting and research. Each work says how it was made.</p>
+            </div>
+          </section>
+
+          <section class="section" id="after-labor">
+            <div class="head">
+              <p class="head__eyebrow">Report · By M. Bagus Prabowo, with Hark · Oct 14, 2026</p>
+              <h2>After Labor: Scenarios for AI, Robotics, the 2030s Debt Reckoning, and the Restructuring of Society, 2026–2050</h2>
+              <p class="head__sub"><span class="chip">Draft v0.1</span></p>
+            </div>
+            <div class="pair">
+              <div class="prose">
+                <p>Five scenarios built from three uncertainties:</p>
+                <ul>
+                  <li><strong>Capability:</strong> diffusion vs takeoff</li>
+                  <li><strong>Distribution:</strong> concentrated vs broad</li>
+                  <li><strong>The global debt reckoning:</strong> orderly or disorderly, as public debt passes 100% of world GDP around 2029</li>
+                </ul>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <caption>Subjective probabilities</caption>
+                  <thead>
+                    <tr><th scope="col">Scenario</th><th scope="col">Probability</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">S1 Slow Burn</th><td class="num">25%</td></tr>
+                    <tr><th scope="row">S2 The Gilded Machine</th><td class="num">22%</td></tr>
+                    <tr><th scope="row">S3 Robot Dividend</th><td class="num">15%</td></tr>
+                    <tr><th scope="row">S4 Fortress Blocs</th><td class="num">20%</td></tr>
+                    <tr><th scope="row">S5 Managed Abundance</th><td class="num">13%</td></tr>
+                    <tr><th scope="row">Wildcard <small>Loss of Control</small></th><td class="num">~5% <small>severe</small></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="links">
+              <a class="btn" href="https://muhammad7a.github.io/files/After-Labor-Report-v0.1.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">336 pages</span>
+            </div>
+          </section>
+
+          <section class="section" id="works">
+            <div class="head"><h2>Books, a course, reports and a novel</h2></div>
+            <div class="cards">
+              <div>
+                <h3>The Machine Among Us: A Sociology of Robots, Work, Ownership, and Human Worth</h3>
+                <p>A book on what robots change about work, ownership and human worth. Rule: everything true as of October 2026; forecasts labeled.</p>
+                <p class="quote">"Every clause about torque limits or incident reports was secretly a clause about people: who carries the risk, who keeps the gains, who gets to say no."</p>
+                <p class="fineprint">From the preface</p>
+                <p><span class="pill">13 chapters</span> <span class="chip">Draft v0.1</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/The-Machine-Among-Us-v0.1.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">106 pages</span></div>
+              </div>
+              <div>
+                <h3>The Material Economy: Energy, Minerals, Machines, Intelligence and Power in the Global Economy</h3>
+                <p>A 12-month self-study course, written for me by Hark (Nov 5, 2026), built on USGS Mineral Commodity Summaries 2026 and the IEA Global Critical Minerals Outlook 2026.</p>
+                <p>Months run from how the global economy works, through critical minerals and downstreaming, to money and sovereign capital and geopolitical scenarios 2026–2050.</p>
+                <p><span class="pill">12 months</span> <span class="chip">Draft v0.1</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/The-Material-Economy-v0.1.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">538 pages</span></div>
+              </div>
+              <div>
+                <h3>From Erdős to Riemann: A Compute-Ordered Research Agenda for AI-Driven Pure Mathematics</h3>
+                <p>An impact-scored map of open problems and the order an AI-only research program should attack them. Oct 8, 2026.</p>
+                <p><span class="pill">26 open problems</span> <span class="chip">Draft v0.1</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/AI-Math-Research-Agenda-Oct-2026.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">17 pages</span></div>
+              </div>
+              <div>
+                <h3>The Personal Agent Stack</h3>
+                <p>A technical report on how to build a consumer personal AI agent: models are rented, the harness is owned. Oct 12, 2026.</p>
+                <p><span class="chip">Draft v0.1</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/Personal-Agent-Stack-Oct-2026.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">51 pages</span></div>
+              </div>
+              <div>
+                <h3>The Deciding Minutes</h3>
+                <p>A novel written as the declassified memoir of a fictional U.S. president in a 2045 nuclear crisis. Its form is inspired by B. J. Habibie's <em>Detik-Detik yang Menentukan</em>.</p>
+                <p class="fineprint">Fiction; teaches no methods.</p>
+                <p><span class="chip">Draft v0.1</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/The-Deciding-Minutes-v0.1.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">267 pages</span></div>
+              </div>
+              <div>
+                <h3>Random Reminiscences of Men and Events</h3>
+                <p>John D. Rockefeller's 1909 memoir (public domain), rewritten in modern English.</p>
+                <p><span class="chip">Draft v0.1</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/Random-Reminiscences-Modern-English.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">144 pages</span></div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="x-view" id="laws" data-nav="Laws" role="tabpanel" aria-labelledby="tab-laws" tabindex="-1" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Laws · October 2026</p>
+              <h1>Drafting the rules for robots, in Indonesia and the U.S.</h1>
+              <p class="hero__sub">Two draft robotics laws, each built on the real legal baseline of its country. Both are working drafts, not official documents.</p>
+            </div>
+          </section>
+
+          <section class="section" id="law-drafts">
+            <div class="head"><h2>Two drafts, one question: who carries the risk when robots act?</h2></div>
+            <div class="cards">
+              <div>
+                <h3>RUU Robotika dan Sistem Kecerdasan Artifisial Terwujud</h3>
+                <p>A draft Indonesian bill plus its Naskah Akademik (academic paper), Oct 13, 2026, following the format required by Indonesian law (UU 12/2011 as amended).</p>
+                <p>It asks:</p>
+                <ul>
+                  <li>Who is liable when an autonomous robot injures someone?</li>
+                  <li>Can robots own property?</li>
+                  <li>Is a person abroad remotely operating a robot in Jakarta "working in Indonesia"?</li>
+                </ul>
+                <div class="links">
+                  <a class="btn" href="https://muhammad7a.github.io/files/RUU-Robotika-Draft-v0.2.pdf" target="_blank" rel="noopener">Draft bill v0.2</a> <span class="pill">27 pages</span>
+                  <a class="btn" href="https://muhammad7a.github.io/files/Naskah-Akademik-RUU-Robotika-v0.1.pdf" target="_blank" rel="noopener">Naskah Akademik</a> <span class="pill">23 pages</span>
+                </div>
+                <p class="fineprint">Working draft, not an official document.</p>
+              </div>
+              <div>
+                <h3>Safe and Accountable Robotics Act of 2026</h3>
+                <p>A U.S. federal discussion draft (not an introduced bill), built on the real October 2026 baseline:</p>
+                <ul>
+                  <li>No federal robotics statute</li>
+                  <li>OSHA's General Duty Clause</li>
+                  <li>ANSI/A3 R15.06-2025</li>
+                  <li>The FCC Covered List decision on foreign-produced advanced robotics</li>
+                </ul>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/SARA-Act-Robotics-Bill-Draft-v0.1.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">34 pages</span></div>
+                <p class="fineprint">Discussion draft, not an introduced bill.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="x-view" id="interactive" data-nav="Interactive" role="tabpanel" aria-labelledby="tab-interactive" tabindex="-1" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Interactive</p>
+              <h1>Things to explore, not just read.</h1>
+              <p class="hero__sub">A 3D model of civilizations on the Kardashev scale, a feed of curiosity, and the full data of my benchmark audit.</p>
+            </div>
+          </section>
+
+          <section class="section" id="explore">
+            <div class="head"><h2>Open one and click around.</h2></div>
+            <div class="cards">
+              <div>
+                <h3>Kardashev Type I Planet</h3>
+                <p>An interactive 3D model of a planetary civilization, extended to Type II (Dyson swarm, Matrioshka shells, Shkadov thruster) and Type III (a 90,000-point Milky Way, colonization wave, light-lag ruler).</p>
+                <p><span class="pill">36 sources</span></p>
+                <div class="links">
+                  <a class="btn" href="https://hark.com/site/181c767c-91b2-4253-a043-7bb306687c8c?hark_region=us" target="_blank" rel="noopener">Open</a>
+                </div>
+              </div>
+              <div>
+                <h3>Atlas of Curiosity</h3>
+                <p>An endless feed of curiosity cards across every domain, with a constellation graph of connections.</p>
+                <p><span class="chip">Coming soon</span></p>
+              </div>
+              <div>
+                <h3>HLE-Diamond 1,000-question run</h3>
+                <p>The full 1,000-question pilot run from my audit of Humanity's Last Exam, with its code.</p>
+                <div class="links">
+                  <a class="btn" href="https://github.com/Muhammad7A/HLE-Diamond-Hark-Evals" target="_blank" rel="noopener">Code on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="x-view" id="inner" data-nav="Inner life" role="tabpanel" aria-labelledby="tab-inner" tabindex="-1" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">Inner life · First drafts, October 2026</p>
+              <h1>Short books for the inside of a life.</h1>
+              <p class="hero__sub">Contemplative books that name no god and ask the reader to test each line against direct experience, and essays about growing up in Semarang. By M. Bagus Prabowo.</p>
+            </div>
+          </section>
+
+          <section class="section" id="songs">
+            <div class="head"><h2>Two songs and a companion to practise them</h2></div>
+            <div class="cards">
+              <div>
+                <h3>The Song of What Remains: A Dialogue on Awakening</h3>
+                <p>A short contemplative book in dialogue form.</p>
+                <p><span class="chip">First draft</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/The-Song-of-What-Remains-v0.1.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">38 pages</span></div>
+              </div>
+              <div>
+                <h3>The Song of the Unbound: A Monologue of Self-Realization</h3>
+                <p>A short contemplative book in monologue form.</p>
+                <p><span class="chip">First draft</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/The-Song-of-the-Unbound-v0.1.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">25 pages</span></div>
+              </div>
+              <div>
+                <h3>Living What Remains</h3>
+                <p>A practical companion with seven short practices:</p>
+                <ul>
+                  <li>The Turn <span class="pill">30 seconds</span></li>
+                  <li>Not This</li>
+                  <li>Name and Widen</li>
+                  <li>The Doer Check</li>
+                  <li>The One-Pocket Test</li>
+                  <li>The Small Death</li>
+                  <li>Silence Before Speech</li>
+                </ul>
+                <p><span class="chip">First draft</span></p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/Living-What-Remains-v0.1.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">19 pages</span></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" id="essays">
+            <div class="head"><h2>Small Struggles: Essays</h2></div>
+            <div class="cards">
+              <div>
+                <h3>12 personal essays about growing up in Semarang</h3>
+                <ul>
+                  <li>The Back Seat</li>
+                  <li>Five Days</li>
+                  <li>Second Place</li>
+                  <li>No Card</li>
+                  <li>Complete Software</li>
+                </ul>
+                <p class="fineprint">And more.</p>
+                <div class="links"><a class="btn" href="https://muhammad7a.github.io/files/Small-Struggles-Essays.pdf" target="_blank" rel="noopener">Download PDF</a> <span class="pill">15 pages</span></div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="x-view" id="about" data-nav="About" role="tabpanel" aria-labelledby="tab-about" tabindex="-1" hidden>
+          <section class="hero">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">About</p>
+              <h1>M. Bagus Prabowo</h1>
+              <p class="hero__sub">Recognition, four months of work in order, and how to reach me.</p>
+            </div>
+          </section>
+
+        <section class="section" id="recognition">
+          <div class="head"><h2>Recognition and activities</h2></div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col">What</th><th scope="col">Result</th><th scope="col">When</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Universitas Ciputra Jakarta <small>Informatics – Artificial Intelligence, 2027 entry</small></th><td>Accepted, Jalur Undangan Prestasi merit scholarship</td><td class="muted">Sep 2026</td></tr>
+                <tr><th scope="row">Algoverse AI Research Program</th><td>Accepted, 30% scholarship</td><td class="muted">Oct 2026</td></tr>
+                <tr><th scope="row">AI Open Innovation Challenge</th><td>Semifinalist</td><td class="muted">2026</td></tr>
+                <tr><th scope="row">National Science Olympiad (OSN) <small>Earth Science</small></th><td>3rd place at regency level; reached the provincial round as the only grade-10 student</td><td class="muted">2025</td></tr>
+                <tr><th scope="row">English competition team</th><td>2nd place</td><td class="muted">Feb 2026</td></tr>
+                <tr><th scope="row">KIR, school youth science research club</th><td>Chair</td><td class="muted">Since grade 10</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="head"><h2>Four months, from first app to a 538-page course</h2></div>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__when">Aug 2026</p>
+              <div class="timeline__what">First full-stack AI app: Nova Explorer, later Novaro.</div>
+            </li>
+            <li>
+              <p class="timeline__when">Sep 2026</p>
+              <div class="timeline__what"><ul><li>Novaro V3 rebuild</li><li>University acceptance</li></ul></div>
+            </li>
+            <li>
+              <p class="timeline__when">Oct 2026</p>
+              <div class="timeline__what"><ul><li>Groundwork engine</li><li>HLE-Diamond audit paper, v1 and v2</li><li>Robotics bills for Indonesia and the U.S.</li><li>After Labor report</li><li>The Machine Among Us</li><li>Kardashev model</li></ul></div>
+            </li>
+            <li>
+              <p class="timeline__when">Nov 2026</p>
+              <div class="timeline__what">The Material Economy course.</div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="head"><h2>Get in touch</h2></div>
+          <div class="prose">
+            <p>Email: <a class="link" href="mailto:vantagenovaaiops@gmail.com">vantagenovaaiops@gmail.com</a></p>
+          </div>
+          <div class="links">
+            <a class="btn" href="https://github.com/Muhammad7A" target="_blank" rel="noopener">See my GitHub</a>
+            <a class="btn" href="mailto:vantagenovaaiops@gmail.com">Email me</a>
+          </div>
+          <p class="fineprint">Every book and report on this site is free to download.</p>
+        </section>
+        </section>
+      </main>
+      <footer class="foot">
+        <p>Built November 2026.</p>
+        <nav aria-label="Back to sections" data-auto></nav>
+      </footer>
+    </div>
+    <script src="hark.js"></script>
+    <script>
+      (function () {
+        var tabs = [].slice.call(document.querySelectorAll('.x-tabs [role="tab"]'));
+        var views = tabs.map(function (t) { return document.getElementById(t.getAttribute("aria-controls")); });
+        var strip = document.querySelector(".x-tabs");
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        function show(i, target) {
+          tabs.forEach(function (t, j) {
+            var on = j === i;
+            t.setAttribute("aria-selected", on ? "true" : "false");
+            t.tabIndex = on ? 0 : -1;
+            views[j].hidden = !on;
+          });
+          var t = tabs[i];
+          var l = t.offsetLeft - 8, r = t.offsetLeft + t.offsetWidth + 8;
+          if (l < strip.scrollLeft || r > strip.scrollLeft + strip.clientWidth) {
+            strip.scrollTo({ left: l, behavior: reduce ? "auto" : "smooth" });
+          }
+          if (target && target !== views[i]) target.scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+          else window.scrollTo(0, 0);
+        }
+
+        tabs.forEach(function (t, i) {
+          t.addEventListener("click", function () { show(i); });
+          t.addEventListener("keydown", function (e) {
+            var n = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : null;
+            if (n === null) return;
+            e.preventDefault();
+            n = (n + tabs.length) % tabs.length;
+            show(n);
+            tabs[n].focus();
+          });
+        });
+
+        // Links to a view, or to a part of one (such as the footer's), switch views instead of jumping.
+        document.addEventListener("click", function (e) {
+          var a = e.target.closest && e.target.closest('a[href^="#"]');
+          if (!a) return;
+          var id = a.getAttribute("href").slice(1);
+          var el = id && document.getElementById(id);
+          if (!el) return;
+          for (var i = 0; i < views.length; i++) {
+            if (views[i].contains(el)) { e.preventDefault(); show(i, el); return; }
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
